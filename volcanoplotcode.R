@@ -140,7 +140,7 @@ feature_info <- feature_info %>%
 feature_info$mz <- as.numeric(sub("X", "", feature_info$mz))
 feature_info$RetentionTime <- as.numeric(feature_info$RetentionTime)
 feature_info$ClusterIndex <- as.numeric(feature_info$ClusterIndex)
-feature_info$shared.name <- as.numeric(feature_info$ClusterIndex)
+feature_info$'shared name' <- as.numeric(feature_info$ClusterIndex)
 
 write.csv(feature_info, "feature_significance.csv", row.names = FALSE)
 
